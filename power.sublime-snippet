@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+ll power(ll x1, ll n1){
+	if(n1 == 0) return 1;
+	else if(n1%2==0) return power(x1*x1, n1/2);
+	else return x1*power(x1*x1, (n1-1)/2);
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>power</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

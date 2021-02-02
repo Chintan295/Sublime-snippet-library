@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+vector<ll> v[$1];
+ll vis[$2]={0};
+ll dfs(ll cur){
+	vis[cur]=1;
+	for(int i=0; i<v[cur].size(); i++){
+		if(vis[v[cur][i]]==0){
+			dfs(v[cur][i]);
+		}
+	}
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>dfs</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
